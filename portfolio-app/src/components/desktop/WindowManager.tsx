@@ -5,7 +5,7 @@ import React, { createContext, useContext, useState, ReactNode } from 'react';
 export interface WindowState {
     id: string;
     title: string;
-    icon?: string;
+    icon?: React.ReactNode;
     isOpen: boolean;
     isMinimized: boolean;
     isMaximized: boolean;
@@ -18,7 +18,7 @@ export interface WindowState {
 interface WindowContextType {
     windows: WindowState[];
     activeWindowId: string | null;
-    openWindow: (id: string, title: string, component: ReactNode, icon?: string) => void;
+    openWindow: (id: string, title: string, component: ReactNode, icon?: React.ReactNode) => void;
     closeWindow: (id: string) => void;
     minimizeWindow: (id: string) => void;
     maximizeWindow: (id: string) => void;
@@ -47,7 +47,7 @@ export function WindowProvider({ children }: { children: ReactNode }) {
         setIsStartMenuOpen(false); // Close start menu when clicking a window
     };
 
-    const openWindow = (id: string, title: string, component: ReactNode, icon?: string) => {
+    const openWindow = (id: string, title: string, component: ReactNode, icon?: React.ReactNode) => {
         setWindows(prev => {
             const existing = prev.find(w => w.id === id);
             if (existing) {

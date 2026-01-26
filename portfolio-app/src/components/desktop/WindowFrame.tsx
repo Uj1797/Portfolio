@@ -39,8 +39,8 @@ export default function WindowFrame({
             style={{ zIndex }}
             initial={isMaximized ? false : { x: initialPosition.x, y: initialPosition.y, width: initialSize.width, height: initialSize.height }}
             animate={isMaximized
-                ? { x: 0, y: 0, width: '100vw', height: 'calc(100vh - 48px)' }
-                : { width: initialSize.width, height: initialSize.height }
+                ? { x: 0, y: 0, width: '100vw', height: 'calc(100vh - 40px)' }
+                : { width: initialSize.width, height: initialSize.height, x: initialPosition.x, y: initialPosition.y }
             }
             drag={!isMaximized}
             dragMomentum={false}

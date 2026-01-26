@@ -127,3 +127,14 @@
     font-size: 11px;
     color: #6c757d;
 }
+
+.addressIcon {
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+}
+
+.sideIcon {
+    width: 14px;
+    height: 14px;
+}

@@ -45,7 +45,7 @@ export default function Taskbar() {
                                 }
                             }}
                         >
-                            <span className={styles.taskIcon}>{/* Icon placeholder */}</span>
+                            {win.icon && <span className={styles.taskIcon}>{win.icon}</span>}
                             <span className={styles.taskTitle}>{win.title}</span>
                         </button>
                     ))}

@@ -17,15 +17,20 @@ import Experience from '../Experience';
 import Education from '../Education';
 import Certificates from '../Certificates';
 
+import {
+    FaRocket, FaUserAstronaut, FaCodeBranch, FaBrain,
+    FaCompass, FaGraduationCap, FaAward, FaPaperPlane
+} from 'react-icons/fa';
+
 const APPS = [
-    { id: 'welcome', title: 'Welcome Center', icon: '👋', component: <Hero /> },
-    { id: 'about', title: 'About Me', icon: '👤', component: <About /> },
-    { id: 'projects', title: 'Projects', icon: '📁', component: <Projects /> },
-    { id: 'skills', title: 'Skills', icon: '📊', component: <Skills /> },
-    { id: 'experience', title: 'Experience', icon: '💼', component: <Experience /> },
-    { id: 'education', title: 'Education', icon: '🎓', component: <Education /> },
-    { id: 'certificates', title: 'Certificates', icon: '📜', component: <Certificates /> },
-    { id: 'contact', title: 'Contact', icon: '📧', component: <Contact /> },
+    { id: 'welcome', title: 'Welcome Center', icon: <FaRocket style={{ color: '#FF7E5F' }} />, component: <Hero /> },
+    { id: 'about', title: 'About Me', icon: <FaUserAstronaut style={{ color: '#A855F7' }} />, component: <About /> },
+    { id: 'projects', title: 'Projects', icon: <FaCodeBranch style={{ color: '#00D4FF' }} />, component: <Projects /> },
+    { id: 'skills', title: 'Skills', icon: <FaBrain style={{ color: '#00FF88' }} />, component: <Skills /> },
+    { id: 'experience', title: 'Experience', icon: <FaCompass style={{ color: '#FBCC05' }} />, component: <Experience /> },
+    { id: 'education', title: 'Education', icon: <FaGraduationCap style={{ color: '#3B82F6' }} />, component: <Education /> },
+    { id: 'certificates', title: 'Certificates', icon: <FaAward style={{ color: '#F59E0B' }} />, component: <Certificates /> },
+    { id: 'contact', title: 'Contact', icon: <FaPaperPlane style={{ color: '#60A5FA' }} />, component: <Contact /> },
 ];
 
 export default function Desktop() {

@@ -1,6 +1,10 @@
 import React from 'react';
 import { useWindow } from './WindowManager';
 import styles from './StartMenu.module.css';
+import {
+    FaRocket, FaUserAstronaut, FaCodeBranch, FaBrain,
+    FaCompass, FaGraduationCap, FaAward, FaPaperPlane
+} from 'react-icons/fa';
 
 export default function StartMenu() {
     const { openWindow, toggleStartMenu } = useWindow();
@@ -45,19 +49,19 @@ export default function StartMenu() {
                 <div className={styles.separator} />
                 <ul className={styles.programsList}>
                     <li onClick={() => handleLaunch('projects', 'Project Explorer')}>
-                        <span className={styles.icon}>📁</span> Projects
+                        <FaCodeBranch className={styles.menuIcon} style={{ color: '#00D4FF' }} /> Projects
                     </li>
                     <li onClick={() => handleLaunch('about', 'About Me')}>
-                        <span className={styles.icon}>👤</span> About Me
+                        <FaUserAstronaut className={styles.menuIcon} style={{ color: '#A855F7' }} /> About Me
                     </li>
                     <li onClick={() => handleLaunch('experience', 'Professional Experience')}>
-                        <span className={styles.icon}>💼</span> Experience
+                        <FaCompass className={styles.menuIcon} style={{ color: '#FBCC05' }} /> Experience
                     </li>
                     <li onClick={() => handleLaunch('skills', 'System Performance')}>
-                        <span className={styles.icon}>📊</span> Skills
+                        <FaBrain className={styles.menuIcon} style={{ color: '#00FF88' }} /> Skills
                     </li>
                     <li onClick={() => handleLaunch('contact', 'Contact Support')}>
-                        <span className={styles.icon}>📧</span> Contact
+                        <FaPaperPlane className={styles.menuIcon} style={{ color: '#60A5FA' }} /> Contact
                     </li>
                 </ul>
                 <div className={styles.searchBox}>

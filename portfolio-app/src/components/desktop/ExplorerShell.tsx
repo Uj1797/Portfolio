@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './ExplorerShell.module.css';
+import { FaFolder, FaHome, FaClock, FaFileAlt, FaImage, FaMusic } from 'react-icons/fa';
 
 interface ExplorerShellProps {
     title: string;
@@ -15,7 +16,7 @@ export default function ExplorerShell({ title, children }: ExplorerShellProps) {
                     <button className={styles.forwardBtn}>→</button>
                 </div>
                 <div className={styles.addressBar}>
-                    <span className={styles.folderIcon}>📁</span>
+                    <FaFolder className={styles.addressIcon} style={{ color: '#FBCC05' }} />
                     <span className={styles.breadcrumb}>Computer ▸ {title}</span>
                 </div>
                 <div className={styles.searchBar}>
@@ -27,16 +28,16 @@ export default function ExplorerShell({ title, children }: ExplorerShellProps) {
                     <div className={styles.sidebarSection}>
                         <h3>Favorite Links</h3>
                         <ul>
-                            <li>🏠 Desktop</li>
-                            <li>📁 Recent Items</li>
+                            <li><FaHome className={styles.sideIcon} style={{ color: '#3B82F6' }} /> Desktop</li>
+                            <li><FaClock className={styles.sideIcon} style={{ color: '#A855F7' }} /> Recent Items</li>
                         </ul>
                     </div>
                     <div className={styles.sidebarSection}>
                         <h3>Folders</h3>
                         <ul>
-                            <li>📂 Documents</li>
-                            <li>🖼️ Pictures</li>
-                            <li>🎵 Music</li>
+                            <li><FaFileAlt className={styles.sideIcon} style={{ color: '#94A3B8' }} /> Documents</li>
+                            <li><FaImage className={styles.sideIcon} style={{ color: '#EC4899' }} /> Pictures</li>
+                            <li><FaMusic className={styles.sideIcon} style={{ color: '#10B981' }} /> Music</li>
                         </ul>
                     </div>
                 </aside>

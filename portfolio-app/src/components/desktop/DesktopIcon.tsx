@@ -3,20 +3,17 @@ import styles from './DesktopIcon.module.css';
 
 interface DesktopIconProps {
     title: string;
-    icon?: string;
+    icon: React.ReactNode;
     onDoubleClick: () => void;
 }
 
 export default function DesktopIcon({ title, icon, onDoubleClick }: DesktopIconProps) {
-    // Default to the generated folder icon
-    const iconPath = icon || '/icons/folder.png';
-
     return (
         <div className={styles.iconContainer} onDoubleClick={onDoubleClick}>
             <div className={styles.iconWrapper}>
-                <img src={iconPath} alt={title} className={styles.iconImage} />
+                {icon}
             </div>
-            <div className={styles.iconTitle}>
+            <div className={styles.iconTitle} title={title}>
                 {title}
             </div>
         </div>
