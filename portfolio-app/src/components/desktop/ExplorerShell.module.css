@@ -1,0 +1,129 @@
+.explorer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #fff;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.toolbar {
+    height: 50px;
+    background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 10px;
+}
+
+.navButtons {
+    display: flex;
+    gap: 5px;
+}
+
+.navButtons button {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #ced4da;
+    background: #fff;
+    color: #adb5bd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: not-allowed;
+}
+
+.addressBar {
+    flex: 1;
+    height: 24px;
+    background: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.breadcrumb {
+    color: #495057;
+}
+
+.searchBar {
+    width: 200px;
+}
+
+.searchBar input {
+    width: 100%;
+    height: 24px;
+    padding: 0 8px;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.mainArea {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 180px;
+    background: #f1f3f5;
+    border-right: 1px solid #dee2e6;
+    padding: 15px 10px;
+    overflow-y: auto;
+}
+
+.sidebarSection {
+    margin-bottom: 20px;
+}
+
+.sidebarSection h3 {
+    font-size: 11px;
+    font-weight: bold;
+    color: #495057;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.sidebarSection ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebarSection li {
+    font-size: 12px;
+    padding: 4px 8px;
+    cursor: pointer;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sidebarSection li:hover {
+    background: #e9ecef;
+}
+
+.contentBody {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #fff;
+}
+
+.statusbar {
+    height: 22px;
+    background: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 11px;
+    color: #6c757d;
+}

@@ -15,6 +15,8 @@ interface WindowFrameProps {
     initialSize?: { width: number; height: number };
 }
 
+import ExplorerShell from './ExplorerShell';
+
 export default function WindowFrame({
     id,
     title,
@@ -55,13 +57,15 @@ export default function WindowFrame({
             >
                 <div className={styles.titleText}>{title}</div>
                 <div className={styles.controls}>
-                    <button onClick={(e) => { e.stopPropagation(); minimizeWindow(id); }} className={styles.minimize}>_</button>
+                    <button onClick={(e) => { e.stopPropagation(); minimizeWindow(id); }} className={styles.minimize}>–</button>
                     <button onClick={(e) => { e.stopPropagation(); maximizeWindow(id); }} className={styles.maximize}>□</button>
                     <button onClick={(e) => { e.stopPropagation(); closeWindow(id); }} className={styles.close}>✕</button>
                 </div>
             </div>
             <div className={styles.content}>
-                {children}
+                <ExplorerShell title={title}>
+                    {children}
+                </ExplorerShell>
             </div>
         </motion.div>
     );
