@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Vista Aero Palette */
+  --vista-glass: rgba(20, 30, 40, 0.65);
+  --vista-glass-border: rgba(255, 255, 255, 0.4);
+  --vista-glass-highlight: rgba(255, 255, 255, 0.2);
+  --vista-text: #ffffff;
+  --vista-text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+
+  /* Taskbar */
+  --taskbar-bg: rgba(0, 0, 0, 0.75);
+  --taskbar-height: 48px;
+
+  /* Windows */
+  --window-bg: #f0f0f0;
+  --window-header-bg: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 40%, rgba(255, 255, 255, 0) 41%, rgba(255, 255, 255, 0.2) 100%);
+  --window-border: 1px solid rgba(0, 0, 0, 0.5);
+  --window-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.3) inset;
+
+  /* Common */
+  --font-ui: 'Segoe UI', 'Tahoma', sans-serif;
+  --z-desktop: 1;
+  --z-window: 10;
+  --z-taskbar: 1000;
+  --z-startmenu: 1001;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Base Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: var(--section-padding) 0;
+}
+
+/* Typography with Bells and Whistles */
+h1,
+h2,
+h3 {
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.section-title {
+  font-size: clamp(3rem, 8vw, 4.5rem);
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to bottom, #fff, #475569);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+}
+
+.section-subtitle {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 4rem;
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Glassmorphism Classes */
+.glass {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-glass);
+}
+
+.glass-hover:hover {
+  border-color: var(--border-active);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Buttons */
+.btn-vibrant {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  border-radius: 12px;
+  background: #fff;
+  color: #000;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 1;
+}
+
+.btn-vibrant:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
