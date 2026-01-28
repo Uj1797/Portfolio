@@ -7,31 +7,7 @@ import DesktopIcon from './DesktopIcon';
 import WindowFrame from './WindowFrame';
 import { useWindow } from './WindowManager';
 
-// Import all sections
-import Hero from '../Hero';
-import About from '../About';
-import Projects from '../Projects';
-import Skills from '../Skills';
-import Contact from '../Contact';
-import Experience from '../Experience';
-import Education from '../Education';
-import Certificates from '../Certificates';
-
-import {
-    FaRocket, FaUserAstronaut, FaCodeBranch, FaBrain,
-    FaCompass, FaGraduationCap, FaAward, FaPaperPlane
-} from 'react-icons/fa';
-
-const APPS = [
-    { id: 'welcome', title: 'Welcome Center', icon: <FaRocket style={{ color: '#FF7E5F' }} />, component: <Hero /> },
-    { id: 'about', title: 'About Me', icon: <FaUserAstronaut style={{ color: '#A855F7' }} />, component: <About /> },
-    { id: 'projects', title: 'Projects', icon: <FaCodeBranch style={{ color: '#00D4FF' }} />, component: <Projects /> },
-    { id: 'skills', title: 'Skills', icon: <FaBrain style={{ color: '#00FF88' }} />, component: <Skills /> },
-    { id: 'experience', title: 'Experience', icon: <FaCompass style={{ color: '#FBCC05' }} />, component: <Experience /> },
-    { id: 'education', title: 'Education', icon: <FaGraduationCap style={{ color: '#3B82F6' }} />, component: <Education /> },
-    { id: 'certificates', title: 'Certificates', icon: <FaAward style={{ color: '#F59E0B' }} />, component: <Certificates /> },
-    { id: 'contact', title: 'Contact', icon: <FaPaperPlane style={{ color: '#60A5FA' }} />, component: <Contact /> },
-];
+import { APPS } from '../../constants';
 
 export default function Desktop() {
     const { windows, openWindow, activeWindowId } = useWindow();
