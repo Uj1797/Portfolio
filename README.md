@@ -1,4 +1,4 @@
-# 🖥️ VistaPortfolio: Windows Vista Reimagined
+# 🖥️ My_Portfolio: Windows Vista Reimagined
 
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-Latest-blueviolet?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
@@ -37,45 +37,6 @@ A modern, high-performance portfolio application built with Next.js, featuring a
 -   Node.js (LTS version recommended)
 -   npm, yarn, or pnpm
 
-### Installation
-
-1.  **Clone the repository**:
-    ```bash
-    git clone https://github.com/Uj1797/Portfolio.git
-    cd Portfolio/portfolio-app
-    ```
-
-2.  **Install dependencies**:
-    ```bash
-    npm install
-    ```
-
-3.  **Run the development server**:
-    ```bash
-    npm run dev
-    ```
-
-4.  **Open the application**:
-    Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
-
----
-
-## 🏗️ Project Structure
-
-```text
-src/
-├── components/          # Reusable UI components
-│   ├── desktop/         # Vista OS Core (Taskbar, StartMenu, WindowManager)
-│   ├── About.tsx        # Portfolio Section: About
-│   ├── Projects.tsx     # Portfolio Section: Projects
-│   └── ...              # Other portfolio sections
-├── lib/                 # Utility functions and data
-│   └── data.ts          # Centralized content and personal info
-├── app/                 # Next.js App Router pages
-└── constants.tsx        # Application-wide constants and app definitions
-```
-
----
 
 ## 👨‍💻 Author
 
