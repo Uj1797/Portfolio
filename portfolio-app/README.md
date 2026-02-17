@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🖥️ VistaPortfolio: Windows Vista Reimagined
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-Latest-blueviolet?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Managed-336791?style=for-the-badge&logo=postgresql)](https://www.postgresql.org/)
 
-First, run the development server:
+A modern, high-performance portfolio application built with Next.js, featuring a nostalgic yet sleek **Windows Vista-themed UI**. Experience a desktop environment with aero-glass effects, interactive windows, and a functional taskbar—all within your browser.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## ✨ Key Features
+
+-   **🪟 Interactive Window Manager**: Drag, minimize, maximize, and close windows just like a real OS.
+-   **🌈 Aero Glass Aesthetic**: Beautiful translucent backgrounds and smooth transitions powered by Framer Motion.
+-   **🖱️ Desktop Environment**: Functional desktop icons, a dynamic taskbar, and a customizable start menu.
+-   **🧩 Modular Architecture**: Highly reusable React components for every OS element (Start Menu, Taskbar, Explorer).
+-   **🚀 Fast & Optimized**: Built on Next.js 15 for lightning-fast loads and SEO optimization.
+-   **📱 Responsive Vista**: A reimagined desktop experience that adapts gracefully to different screen sizes.
+
+---
+
+## 🛠️ Tech Stack
+
+-   **Frontend**: Next.js 15, React 19, Framer Motion
+-   **Styling**: CSS Modules (Vanilla CSS) for pixel-perfect Vista aesthetics
+-   **Language**: TypeScript
+-   **Icons**: React Icons (Font Awesome, Simple Icons)
+-   **Deployment Ready**: Optimized for Vercel and modern CI/CD pipelines
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+-   Node.js (LTS version recommended)
+-   npm, yarn, or pnpm
+
+### Installation
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/Uj1797/Portfolio.git
+    cd Portfolio/portfolio-app
+    ```
+
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open the application**:
+    Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 🏗️ Project Structure
+
+```text
+src/
+├── components/          # Reusable UI components
+│   ├── desktop/         # Vista OS Core (Taskbar, StartMenu, WindowManager)
+│   ├── About.tsx        # Portfolio Section: About
+│   ├── Projects.tsx     # Portfolio Section: Projects
+│   └── ...              # Other portfolio sections
+├── lib/                 # Utility functions and data
+│   └── data.ts          # Centralized content and personal info
+├── app/                 # Next.js App Router pages
+└── constants.tsx        # Application-wide constants and app definitions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 👨‍💻 Author
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Ujjwal Sharma**
+*Data Engineer | Full Stack Developer*
 
-## Learn More
+-   **GitHub**: [@Uj1797](https://github.com/Uj1797)
+-   **LinkedIn**: [Ujjwal Sharma](https://www.linkedin.com/in/ujjwal-sharma-77bb43306)
+-   **Email**: epitome_courtly.0i@icloud.com
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details (if available).
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<p align="center">Made with ❤️ and a lot of nostalgia for Windows Vista.</p>
